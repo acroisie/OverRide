@@ -78,11 +78,3 @@ level01
 $ cat /home/users/level01/.pass
 uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
 ```
-
-### Explanation
-
-1. **Disassembling the `main` Function**: Use GDB to understand the flow of the program and identify hardcoded values.
-2. **Hardcoded Password**: Found to be `5276`, which allows the program to authenticate and open a shell.
-3. **Executing the Program**: Input the identified password to exploit the program and gain access to the next level's password.
-
-By following these steps, we successfully exploit `level00` and retrieve the password for `level01`.
