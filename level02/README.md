@@ -1,5 +1,3 @@
-Certainly. Here's a more concise version of the README:
-
 # Level02 Exploit
 
 ## Steps
