@@ -8,7 +8,7 @@ Run the program to observe its behavior:
 
 ```bash
 level08@OverRide:~$ ./level08
-Usage: ./level08 filename
+Usage: ./level08 .pass
 level08@OverRide:~$ ./level08 /home/users/level09/.pass
 ERROR: Failed to open ./backups//home/users/level09/.pass
 ```
