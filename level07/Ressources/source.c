@@ -27,7 +27,7 @@ int store_number(unsigned int *data) {
     printf("Index: ");
     index = get_unum();
     
-    if ((index % 3 == 0) || (number >> 24 == 0xb7)) {
+    if ((index % 3 == 0) || (number >> 24 == 0xb7)) { // number >> 24 means the first byte of number and 0xb7 = 183
         puts("*** ERROR! ***");
         puts("This index is reserved for wil!");
         puts("*** ERROR! ***");
