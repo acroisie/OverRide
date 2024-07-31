@@ -9,15 +9,13 @@ int verify_user_name() {
 }
 
 int verify_user_pass() {
-    // Placeholder for actual implementation
-    return 1; // Simulating a successful verification
+    return 1;
 }
 
 int main() {
-    char buffer[0x40]; // Adjust size as needed
+    char buffer[0x40];
     memset(buffer, 0, sizeof(buffer));
 
-    // puts("Enter your username: ");
     printf("Enter your username: ");
     fgets(a_user_name, 0x100, stdin);
     
@@ -39,4 +37,3 @@ int main() {
 
     return 0;
 }
-

